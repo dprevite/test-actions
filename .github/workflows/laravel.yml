@@ -59,6 +59,8 @@ jobs:
         cache: npm
         cache-dependency-path: ./package.json
         node-version: 18
+    - name: npm run build
+      run: npm run build
     - name: Execute tests (Unit and Feature tests) via Pest
       env:
         DB_CONNECTION: sqlite
